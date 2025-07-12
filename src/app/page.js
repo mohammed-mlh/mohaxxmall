@@ -1,5 +1,38 @@
 import { Code2, Github, Linkedin, Mail, Terminal, Zap, ArrowRight, Star, Sparkles } from 'lucide-react';
 
+export const metadata = {
+  title: 'Mohammed Mallahi | Full Stack Developer Portfolio',
+  description: 'Professional portfolio of Mohammed Mallahi, a full stack developer specializing in React, Node.js, and modern web technologies. View projects and get in touch for freelance opportunities.',
+  keywords: [
+    'Mohammed Mallahi',
+    'Full Stack Developer',
+    'Portfolio',
+    'React Developer',
+    'Node.js Developer',
+    'Web Development',
+    'Freelance Developer',
+    'Frontend Development',
+    'Backend Development',
+    'JavaScript',
+    'TypeScript',
+    'Next.js',
+    'MongoDB',
+    'Firebase'
+  ],
+  openGraph: {
+    title: 'Mohammed Mallahi | Full Stack Developer Portfolio',
+    description: 'Professional portfolio showcasing modern web development projects and skills. Available for freelance work.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Mohammed Mallahi Portfolio'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mohammed Mallahi | Full Stack Developer Portfolio',
+    description: 'Professional portfolio showcasing modern web development projects and skills.'
+  }
+};
+
 function HeroPattern() {
   return (
     <div className="absolute inset-0 overflow-hidden">
@@ -349,12 +382,12 @@ function App() {
               </div>
             </a>
           </div>
-          <form className="space-y-6">
+          <form action="https://formspree.io/f/xyzgqbrp" method="POST" className="space-y-6">
             <div className="group">
               <input type="text" placeholder="Your Name" className="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors" />
             </div>
             <div className="group">
-              <input type="email" placeholder="Your Email" className="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors" />
+              <input type="tel" placeholder="Your telephone" className="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors" />
             </div>
             <div className="group">
               <textarea placeholder="Your Message" rows="4" className="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors"></textarea>
