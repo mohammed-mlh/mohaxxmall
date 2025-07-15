@@ -178,7 +178,7 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="relative min-h-[100vh] flex items-center justify-center px-4">
         <HeroPattern />
-        <div className="container mx-auto text-center relative z-10">
+        <div className="container pt-8 mx-auto text-center relative z-10">
           <div className="inline-block mb-6">
             <span className="px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium flex items-center gap-2">
               <Sparkles className="w-4 h-4" />
@@ -253,17 +253,18 @@ function App() {
             <p className="text-gray-400 max-w-2xl mx-auto">Showcasing my best work and technical achievements</p>
           </div>
           <div className="flex flex-col gap-8">
+            {/* web app solution for an agency to sell cars, the advnatges is that the app will show more technical details about the cars in a UI/UX optimized and friendly way, also it will have a scheduluggn process simple and clean */}
             {/* Project 1 */}
             <div className="group rounded-2xl overflow-hidden bg-white/5 hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20 grid grid-cols-1 md:grid-cols-2 min-h-[18rem]">
               {/* Image */}
               <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 relative overflow-hidden flex items-center justify-center h-full min-h-[18rem]">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:scale-110 transition-transform duration-500"></div>
-                {/* You can add an <img> or <Image> here for a real project image */}
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:scale-110 transition-transform duration-500"></div> */}
+                <img src='/images/projects/autovolo.png' className='h-full object-cover' />
               </div>
               {/* Text Content */}
               <div className="p-8 flex flex-col justify-center h-full">
-                <h3 className="text-2xl font-semibold mb-4">E-commerce Platform</h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">A full-stack e-commerce solution with real-time inventory management and secure payment processing</p>
+                <h3 className="text-2xl font-semibold mb-4">AutoVolo</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">A web app solution for car agencies to sell vehicles. The app displays rich technical details about each car in a UI/UX optimized and friendly way, and features a simple, clean scheduling process for test drives or appointments. <span className='block mt-2'>Built with <b>Next.js</b> and <b>Tailwind CSS</b>.</span></p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-xs">React</span>
                   <span className="px-4 py-2 rounded-full bg-purple-500/10 text-purple-400 text-xs">Node.js</span>
@@ -272,12 +273,10 @@ function App() {
                 <div>
 
                   <a
-                    href="https://example.com/ecommerce" // Replace with real project URL
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg text-white font-semibold shadow hover:opacity-90 transition-opacity group text-sm"
+                    href="/projects/autovolo"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg text-white font-semibold shadow hover:opacity-90 transition-opacity text-base group mt-2"
                   >
-                    View Project
+                    Read More
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
